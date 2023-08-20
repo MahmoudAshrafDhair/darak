@@ -14634,7 +14634,7 @@
     };
 
     var fieldsUpdate = generate$1('rgb-hex-update');
-    var sliderUpdate = generate$1('slider-update');
+    var sliderUpdate = generate$1('sliders-update');
     var paletteUpdate = generate$1('palette-update');
 
     var labelPart = optional({
@@ -14751,7 +14751,7 @@
       spectrumPart
     ];
 
-    var _sliderChangeEvent = 'slider.change.value';
+    var _sliderChangeEvent = 'sliders.change.value';
     var sliderChangeEvent = constant(_sliderChangeEvent);
     var isTouchEvent = function (evt) {
       return evt.type.indexOf('touch') !== -1;
@@ -15536,21 +15536,21 @@
       var spectrum = Slider.parts().spectrum({
         dom: {
           tag: 'div',
-          classes: [getClass('hue-slider-spectrum')],
+          classes: [getClass('hue-sliders-spectrum')],
           attributes: { role: 'presentation' }
         }
       });
       var thumb = Slider.parts().thumb({
         dom: {
           tag: 'div',
-          classes: [getClass('hue-slider-thumb')],
+          classes: [getClass('hue-sliders-thumb')],
           attributes: { role: 'presentation' }
         }
       });
       return Slider.sketch({
         dom: {
           tag: 'div',
-          classes: [getClass('hue-slider')],
+          classes: [getClass('hue-sliders')],
           attributes: { role: 'presentation' }
         },
         rounded: false,
@@ -18530,7 +18530,7 @@
         return record(Slider.sketch({
           dom: {
             tag: 'div',
-            classes: ['tox-slider'],
+            classes: ['tox-sliders'],
             attributes: { role: 'presentation' }
           },
           model: {
@@ -37170,7 +37170,7 @@
     };
     var Position = r;
 
-    var _sliderChangeEvent = 'slider.change.value';
+    var _sliderChangeEvent = 'sliders.change.value';
     var sliderChangeEvent = constant(_sliderChangeEvent);
     var isTouchEvent = function (evt) {
       return evt.type.indexOf('touch') !== -1;
@@ -37984,17 +37984,17 @@
         spec$1.onChange(slider, thumb, color);
       };
       return Slider.sketch({
-        dom: dom$1('<div class="${prefix}-slider ${prefix}-hue-slider-container"></div>'),
+        dom: dom$1('<div class="${prefix}-sliders ${prefix}-hue-sliders-container"></div>'),
         components: [
-          Slider.parts()['left-edge'](spec('<div class="${prefix}-hue-slider-black"></div>')),
+          Slider.parts()['left-edge'](spec('<div class="${prefix}-hue-sliders-black"></div>')),
           Slider.parts().spectrum({
-            dom: dom$1('<div class="${prefix}-slider-gradient-container"></div>'),
-            components: [spec('<div class="${prefix}-slider-gradient"></div>')],
+            dom: dom$1('<div class="${prefix}-sliders-gradient-container"></div>'),
+            components: [spec('<div class="${prefix}-sliders-gradient"></div>')],
             behaviours: derive$1([Toggling.config({ toggleClass: resolve('thumb-active') })])
           }),
-          Slider.parts()['right-edge'](spec('<div class="${prefix}-hue-slider-white"></div>')),
+          Slider.parts()['right-edge'](spec('<div class="${prefix}-hue-sliders-white"></div>')),
           Slider.parts().thumb({
-            dom: dom$1('<div class="${prefix}-slider-thumb"></div>'),
+            dom: dom$1('<div class="${prefix}-sliders-thumb"></div>'),
             behaviours: derive$1([Toggling.config({ toggleClass: resolve('thumb-active') })])
           })
         ],
@@ -38063,9 +38063,9 @@
         dom: {
           tag: 'div',
           classes: [
-            resolve('slider-' + spec$1.category + '-size-container'),
+            resolve('sliders-' + spec$1.category + '-size-container'),
             resolve('slider'),
-            resolve('slider-size-container')
+            resolve('sliders-size-container')
           ]
         },
         onChange: onChange,
@@ -38092,11 +38092,11 @@
         sliderBehaviours: derive$1([orientation(Slider.refresh)]),
         components: [
           Slider.parts().spectrum({
-            dom: dom$1('<div class="${prefix}-slider-size-container"></div>'),
-            components: [spec('<div class="${prefix}-slider-size-line"></div>')]
+            dom: dom$1('<div class="${prefix}-sliders-size-container"></div>'),
+            components: [spec('<div class="${prefix}-sliders-size-line"></div>')]
           }),
           Slider.parts().thumb({
-            dom: dom$1('<div class="${prefix}-slider-thumb"></div>'),
+            dom: dom$1('<div class="${prefix}-sliders-thumb"></div>'),
             behaviours: derive$1([Toggling.config({ toggleClass: resolve('thumb-active') })])
           })
         ]

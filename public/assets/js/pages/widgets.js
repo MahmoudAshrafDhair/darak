@@ -4561,7 +4561,7 @@ var KTWidgets = function () {
     }
 
     var _initPriceSlider = function (element) {
-        // init slider
+        // init sliders
         var slider = document.getElementById(element);
         if (typeof slider === 'undefined') {
             return;

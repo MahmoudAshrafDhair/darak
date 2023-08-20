@@ -40,19 +40,114 @@
             <ul class="menu-nav">
 
                 <li class="menu-item" aria-haspopup="true">
-                    <a href="" class="menu-link">
+                    <a href="{{route('admin.dashboard')}}" class="menu-link">
                         <i class="menu-icon flaticon-home-2"></i>
                         <span class="menu-text">{{__('aside.dashboard')}}</span>
                     </a>
                 </li>
 
 
-{{--                    <li class="menu-item" aria-haspopup="true">--}}
-{{--                        <a href="" class="menu-link">--}}
-{{--                            <i class="menu-icon flaticon-map"></i>--}}
-{{--                            <span class="menu-text">{{__('aside.role')}}</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="{{route('admin.users.index')}}" class="menu-link">
+                        <i class="menu-icon flaticon-map"></i>
+                        <span class="menu-text">{{__('aside.user')}}</span>
+                    </a>
+                </li>
+
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="{{route('admin.categories.index')}}" class="menu-link">
+                        <i class="menu-icon flaticon-map"></i>
+                        <span class="menu-text">{{__('aside.category')}}</span>
+                    </a>
+                </li>
+
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="{{route('admin.cities.index')}}" class="menu-link">
+                        <i class="menu-icon flaticon-map"></i>
+                        <span class="menu-text">{{__('aside.city')}}</span>
+                    </a>
+                </li>
+
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="{{route('admin.regions.index')}}" class="menu-link">
+                        <i class="menu-icon flaticon-map"></i>
+                        <span class="menu-text">{{__('aside.region')}}</span>
+                    </a>
+                </li>
+
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="{{route('admin.reals.index')}}" class="menu-link">
+                        <i class="menu-icon flaticon-map"></i>
+                        <span class="menu-text">{{__('aside.real')}}</span>
+                    </a>
+                </li>
+
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="{{route('admin.sliders.index')}}" class="menu-link">
+                        <i class="menu-icon flaticon-map"></i>
+                        <span class="menu-text">{{__('aside.sliders')}}</span>
+                    </a>
+                </li>
+
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="{{route('admin.welcomes.index')}}" class="menu-link">
+                        <i class="menu-icon flaticon-map"></i>
+                        <span class="menu-text">{{__('aside.welcome')}}</span>
+                    </a>
+                </li>
+
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="{{route('admin.contacts.index')}}" class="menu-link">
+                        <i class="menu-icon flaticon-map"></i>
+                        <span class="menu-text">{{__('aside.contact')}}</span>
+                    </a>
+                </li>
+
+                <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle">
+                        <i class="menu-icon flaticon-web"></i>
+                        <span class="menu-text">{{__('aside.pages')}}</span>
+                        <i class="menu-arrow"></i>
+
+                    </a>
+                    <div class="menu-submenu">
+                        <i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+
+                                <li class="menu-item" aria-haspopup="true">
+                                    <a href="{{route('admin.pages.about_us')}}" class="menu-link">
+                                        <i class="menu-bullet menu-bullet-line">
+                                            <span></span>
+                                        </i>
+                                        <span class="menu-text">{{__('page.about_us')}}</span>
+                                    </a>
+                                </li>
+
+
+
+                                <li class="menu-item" aria-haspopup="true">
+                                    <a href="{{route('admin.pages.terms_and_conditions')}}" class="menu-link">
+                                        <i class="menu-bullet menu-bullet-line">
+                                            <span></span>
+                                        </i>
+                                        <span class="menu-text">{{__('page.terms_and_conditions')}}</span>
+                                    </a>
+                                </li>
+
+
+
+                                <li class="menu-item" aria-haspopup="true">
+                                    <a href="{{route('admin.pages.privacy_policy')}}" class="menu-link">
+                                        <i class="menu-bullet menu-bullet-line">
+                                            <span></span>
+                                        </i>
+                                        <span class="menu-text">{{__('page.privacy_police')}}</span>
+                                    </a>
+                                </li>
+
+                        </ul>
+                    </div>
+                </li>
 
 
                 @can('admin list')

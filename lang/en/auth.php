@@ -22,6 +22,6 @@ return [
     'remember' => 'Remember me',
     'sign_in' => 'Sign In',
     'sign_in_message' => 'Enter Email And Password',
-    'app_welcome' => 'Welcome To Control Panel',
+    'app_welcome' => 'Welcome To Control Panel For Darak App',
 
 ];
