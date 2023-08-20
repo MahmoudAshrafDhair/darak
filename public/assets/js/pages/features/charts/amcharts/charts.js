@@ -1289,7 +1289,7 @@ var KTamChartsChartsDemo = function() {
                 "labelPosition": "right",
                 "labelText": "[[townName2]]",
                 "legendValueText": "[[value]]/[[description]]",
-                "title": "latitude/city",
+                "title": "latitude/cities",
                 "fillAlphas": 0,
                 "valueField": "latitude",
                 "valueAxis": "latitudeAxis"

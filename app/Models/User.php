@@ -22,7 +22,10 @@ class User extends Authenticatable
         'full_name',
         'phone',
         'email',
+        'image',
         'password',
+        'code',
+        'active',
     ];
 
     /**
@@ -43,4 +46,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //////////////////////////////////////// HTML Datatable //////////////////////////////////////
+
+    public function getActionButtonsAttribute()
+    {
+        $button = '';
+
+        $button .= '<a href="' . route('admin.users.edit', $this->id) . '" class="btn btn-icon btn-xs btn-info"><i class="flaticon2-edit"></i></a>';
+
+        $button .= '&nbsp;&nbsp;<button  title="Delete User" type="button" data-id="' . $this->id . '" data-name="' . $this->username . '" data-toggle="modal" data-target="#deleteModel" class="btn btn-icon btn-xs btn-danger delete-item"><i class="flaticon2-trash"></i></button>';
+
+        return $button;
+    }
 }

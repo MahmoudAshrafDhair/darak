@@ -3,7 +3,7 @@ var KTnoUiSliderDemos = function() {
 
     // Private functions
     var demo1 = function() {
-        // init slider
+        // init sliders
         var slider = document.getElementById('kt_nouislider_1');
 
         noUiSlider.create(slider, {
@@ -18,7 +18,7 @@ var KTnoUiSliderDemos = function() {
             })
         });
 
-        // init slider input
+        // init sliders input
         var sliderInput = document.getElementById('kt_nouislider_1_input');
 
         slider.noUiSlider.on('update', function( values, handle ) {
@@ -31,7 +31,7 @@ var KTnoUiSliderDemos = function() {
     }
 
     var demo2 = function() {
-        // init slider
+        // init sliders
         var slider = document.getElementById('kt_nouislider_2');
 
         noUiSlider.create(slider, {
@@ -49,7 +49,7 @@ var KTnoUiSliderDemos = function() {
             })
         });
 
-        // init slider input
+        // init sliders input
         var sliderInput = document.getElementById('kt_nouislider_2_input');
 
         slider.noUiSlider.on('update', function( values, handle ) {
@@ -62,7 +62,7 @@ var KTnoUiSliderDemos = function() {
     }
 
     var demo3 = function() {
-        // init slider
+        // init sliders
         var slider = document.getElementById('kt_nouislider_3');
 
         noUiSlider.create(slider, {
@@ -80,7 +80,7 @@ var KTnoUiSliderDemos = function() {
         });
 
 
-        // init slider input
+        // init sliders input
         var sliderInput0 = document.getElementById('kt_nouislider_3_input');
         var sliderInput1 = document.getElementById('kt_nouislider_3.1_input');
         var sliderInputs = [sliderInput1, sliderInput0];
@@ -103,7 +103,7 @@ var KTnoUiSliderDemos = function() {
             slider.appendChild(option);
         }
 
-        // init slider
+        // init sliders
         var html5Slider = document.getElementById('kt_nouislider_4');
 
         noUiSlider.create(html5Slider, {
@@ -115,7 +115,7 @@ var KTnoUiSliderDemos = function() {
             }
         });
 
-        // init slider input
+        // init sliders input
         var inputNumber = document.getElementById('kt_nouislider_input_number');
 
         html5Slider.noUiSlider.on('update', function( values, handle ) {
@@ -139,7 +139,7 @@ var KTnoUiSliderDemos = function() {
     }
 
     var demo5 = function() {
-        // init slider
+        // init sliders
         var slider = document.getElementById('kt_nouislider_5');
 
         noUiSlider.create(slider, {
@@ -175,7 +175,7 @@ var KTnoUiSliderDemos = function() {
     }
 
     var demo6 = function() {
-        // init slider
+        // init sliders
 
         var verticalSlider = document.getElementById('kt_nouislider_6');
 
@@ -188,7 +188,7 @@ var KTnoUiSliderDemos = function() {
             }
         });
 
-        // init slider input
+        // init sliders input
         var sliderInput = document.getElementById('kt_nouislider_6_input');
 
         verticalSlider.noUiSlider.on('update', function( values, handle ) {
@@ -217,7 +217,7 @@ var KTnoUiSliderDemos = function() {
             })
         });
 
-        // init slider input
+        // init sliders input
         var sliderInput = document.getElementById('kt_nouislider_modal1_input');
 
         slider.noUiSlider.on('update', function( values, handle ) {
@@ -247,7 +247,7 @@ var KTnoUiSliderDemos = function() {
             })
         });
 
-        // init slider input
+        // init sliders input
         var sliderInput = document.getElementById('kt_nouislider_modal2_input');
 
         slider.noUiSlider.on('update', function( values, handle ) {
@@ -277,7 +277,7 @@ var KTnoUiSliderDemos = function() {
         });
 
 
-        // init slider input
+        // init sliders input
         var sliderInput0 = document.getElementById('kt_nouislider_modal1.1_input');
         var sliderInput1 = document.getElementById('kt_nouislider_modal1.2_input');
         var sliderInputs = [sliderInput1, sliderInput0];

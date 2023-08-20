@@ -38,7 +38,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="{{asset('assets/css/themes/layout/brand/dark.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/themes/layout/aside/dark.css')}}" rel="stylesheet" type="text/css" />
     <!--end::Layout Themes-->
-    <link rel="shortcut icon" href="{{asset('assets/media/logos/favicon.ico')}}" />
+    <link rel="shortcut icon" href="{{asset('assets/image/logo.svg')}}" />
 {{--    @toastr_css--}}
 </head>
 <!--end::Head-->
@@ -55,7 +55,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <!--begin::Aside body-->
                 <div class="d-flex flex-column-fluid flex-column flex-center mt-5 mt-lg-0">
                     <a href="#" class="mb-15 text-center">
-                        <img src="{{asset('assets/image/login_logo.svg')}}" class="max-h-75px" alt="" />
+                        <img src="{{asset('assets/image/logo.svg')}}" class="max-h-75px" alt="" />
                     </a>
                     <!--begin::Signin-->
                     <div class="login-form login-signin">
@@ -104,7 +104,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <!--end::Aside body-->
                 <!--begin: Aside footer for desktop-->
                 <div class="d-flex flex-column-auto justify-content-between mt-15">
-                    <div class="text-dark-50 font-weight-bold order-2 order-sm-1 my-2">© {{date('Y')}} Mahmoud</div>
+                    <div class="text-dark-50 font-weight-bold order-2 order-sm-1 my-2">© {{date('Y')}} Darak</div>
 {{--                    <div class="d-flex order-1 order-sm-2 my-2">--}}
 {{--                        <a href="#" class="text-muted text-hover-primary">Privacy</a>--}}
 {{--                        <a href="#" class="text-muted text-hover-primary ml-4">Legal</a>--}}

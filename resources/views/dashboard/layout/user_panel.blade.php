@@ -60,7 +60,7 @@
         <!--begin::Nav-->
         <div class="navi navi-spacer-x-0 p-0">
             <!--begin::Item-->
-            <a href="#" class="navi-item">
+            <a href="{{route('admin.edit_profile')}}" class="navi-item">
                 <div class="navi-link">
                     <div class="symbol symbol-40 bg-light mr-3">
                         <div class="symbol-label">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="navi-text">
-                        <div class="font-weight-bold">{{__('admin.profile_edit')}}</div>
+                        <div class="font-weight-bold">{{__('general.profile_edit')}}</div>
 {{--                        <div class="text-muted">Account settings and more--}}
 {{--                        </div>--}}
                     </div>
